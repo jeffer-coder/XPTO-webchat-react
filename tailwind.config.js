@@ -3,7 +3,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors: {
+    /*colors: {
       current: 'app',
       'app-dark': '#23272a',
       'app-dark-sulf': '#2c2f33',
@@ -16,7 +16,8 @@ module.exports = {
       'app-green': '#3da560',
       'app-yellow': '#f9a62b',
       'app-orange': '#f37b68'
-    }
+    }*/
+    
   },
   plugins: [require("@tailwindcss/forms")({
     strategy: 'class',

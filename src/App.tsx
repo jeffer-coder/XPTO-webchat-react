@@ -1,36 +1,43 @@
 import React from 'react';
-import { AiFillBulb, AiFillAlert, AiFillApi,AiFillHourglass } from 'react-icons/ai'
-import { FaUserFriends } from 'react-icons/fa'
-import { RiMessage2Fill } from 'react-icons/ri'
+import {FaHatCowboy,FaUser,FaComment,FaCog, FaEnvelopeOpen} from 'react-icons/fa'
+import {SiMinutemailer} from 'react-icons/si'
+
 function App() {
 	return (
-		<div className="h-screen p-10 bg-app-self flex w-screen">
-			<div className='xpto flex h-full w-full  auto mx-auto'>
-
-				<div className='h-full flex flex-col justify-between p-2 rounded-tl rounded-bl w-20 bg-app-dark'>
-					<div className='flex w-full bg-app-purple py-2 rounded mt-2 justify-center'><AiFillHourglass className='text-app-white text-center text-3xl' /></div>
-					<div className='lex w-full h-full'>
-						<div>
-							<div className='flex flex-col mt-3'>
-								<ul>
-									<li className='w-full rounded-lg py-3 bg-app-dark-mion flex justify-center'><FaUserFriends className='text-2xl text-app-white' /></li>
-									<li className='w-full rounded-lg mt-2 py-3 bg-app-dark-mion flex justify-center'><FaUserFriends className='text-2xl text-app-white' /></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div className='relative'>
-						<img className='rounded-full border border-app-dark' alt='' src='https://randomuser.me/api/portraits/women/81.jpg' />
-						<div className='absolute rounded-full -top-0 w-4 h-4 -right-1 my-1 border-2 border-app-dark bg-app-green z-2'></div>
-					</div>
+		<div className="h-screen bg-slate-600 flex w-screen">
+			<div className='bg-neutral-900 pt-0 p-1 round  flex flex-col justify-between items-center h-full w-16'>
+				<div className='flex flex-col'>
+				<div className='bg-indigo-600 rounded-sm mt-1 w-14 h-14 flex justify-center items-center '>
+					<FaHatCowboy className='text-violet-50 bg-indigo-600 text-3xl' />
 				</div>
-				<div className='w-80 rounded-tr rounded-br h-full bg-app-dark-sulf'></div>
-				<div className='h-full flex flex-col  ml-1 w-full'>
-					<div className="h-full w-full rounded-t bg-app-dark"></div>
-					<div className='h-16 rounded-b bg-app-white w-full'></div>
+				<ul className='flex flex-col justify-center'>
+
+					<li className='btn-nav'>
+						<FaComment className='text-xl'/>
+					</li>
+
+					<li className='btn-nav'>
+						<FaUser className='text-xl'/>
+					</li>
+
+					<li className='btn-nav'>
+						<FaEnvelopeOpen className='text-xl'/>
+					</li>
+
+					<li className='btn-nav'>
+						<FaCog className='text-xl'/>
+					</li>
+					
+				</ul>
+				</div>
+
+				<div className="relative mb-1 mt-1 w-14 h-14">
+					<img className="rounded-full  shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="" />
+					<div className="absolute -top-1 right-0 h-4 w-4 my-1 border-2 border-neutral-900 rounded-full bg-green-400 z-2"></div>
 				</div>
 
 			</div>
+			
 		</div>
 	);
 }
