@@ -6,7 +6,10 @@ module.exports = {
     colors: {
       current: 'app',
       'app-dark': '#23272a',
+      'app-dark-sulf': '#2c2f33',
+      'app-dark-mion': '#36393F',
       'app-white': '#ffffff',
+      'app-self': '#bcc6d5',
       'app-purple': '#8651C9',
       'app-red': '#FF406F',
       'app-blueple': '#5866ef',
